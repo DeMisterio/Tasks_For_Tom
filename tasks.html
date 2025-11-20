@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+    <link rel="icon" type="image/x-icon" href="sandbox.png">
+    <link rel="stylesheet" href="sandbox.css">
+    <script src="performer.js" defer></script>
+    <style>
+        th,
+        td {
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="firstflight.html">Home</a></li>
+            <li><a href="sandbox.html" aria-current="page">Sandbox</a></li>
+            <li>
+                <a href="tasks.html" aria-current="page"></a>Tasks</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 style="text-align: center;"><strong>Here are all the tasks done</strong></h1>
+        <hr />
+        <div class="data_table">
+            <table style="width:100%; border: 1px solid black;">
+                <tr>
+                    <th>Function Name</th>
+                    <th>Input parameters</th>
+                    <th>What it does</th>
+                    <th>Launch</th>
+                    <th>Output </th>
+                    <tr>
+                        <td>Dog age</td>
+                        <td><input id="Dog-age-input" , type="number" , placeholder="23"></td>
+                        <td>Returns the equivalent dog-age for<br> a given human-age (1 human year = 7 dog years)</td>
+                        <td><button id="DogAgeButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Dog-Age"></p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Capitalise</td>
+                        <td><input id="ToCapitalise" , type="text" , placeholder="fOR eXAMPLE"></td>
+                        <td> Returns a string that is the same as the input string but with the first letter of every word capitalised and all other characters lower case
+                        </td>
+                        <td><button id="CapitaliseButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Capitalise"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Circle area</td>
+                        <td><input id="Circle-area-input" , type="number" , placeholder="Any radius"></td>
+                        <td> Returns the area of a circle given its radius</td>
+                        <td><button id="CircleAreaButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Circle-area"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Count spaces</td>
+                        <td><input id="Count-space-input" , type="text" , placeholder="f.e: Hello World!"></td>
+                        <td>r Returns the number of spaces in a given string</td>
+                        <td><button id="SpaceCountCounerButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Count-spaces"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Celsius to Forenheit</td>
+                        <td><input id="Celsius-to-Forenheit-input" , type="number" , placeholder="9"></td>
+                        <td> Returns the temperature in Celsius given a temperature in Fahrenheit
+                        </td>
+                        <td><button id="CelsToForButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Celsius-to-Forenheit"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>To Binary</td>
+                        <td><input id="To-Binary-input" , type="number" , placeholder="67"></td>
+                        <td> eturns the binary value of a denary number</td>
+                        <td><button id="BinaryButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="To-Binary"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>To hex</td>
+                        <td><input id="To-hex-input" , type="number" , placeholder="61"></td>
+                        <td> eturns the hex value of a denary number</td>
+                        <td><button id="TohexButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="To-hex"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Count Character</td>
+                        <td><input id="Count-Character-input" , type="text" , placeholder="a n y t h i n g y o u w a n t"></td>
+                        <td> Returns the number of occurrences of targetstring in inputstring
+                        </td>
+                        <td><button id="CountCharacterButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Count-Character"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Is palindrome</td>
+                        <td><input id="Is-palindrome-input" , type="text" , placeholder="f.e: detartrated"></td>
+                        <td> Returns true if the inputstring is a palindrome</td>
+                        <td><button id="IspalindromeButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="Is-palindrome"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Factorial</td>
+                        <td><input id="Factorial-input" , type="number" , placeholder=" any numner >0"></td>
+                        <td> Returns the factorial of the given number.
+                        </td>
+                        <td>
+                            <button id="FactorialButton" , onclick="">Process</button>
+                        </td>
+                        <td>
+                            <p id="Factorial"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IsISBN</td>
+                        <td><input id="ISBN-input" , type="number" , placeholder=""></td>
+                        <td> Returns true or false depending on whether the string ISBN is a valid ISBN number in the format xxxxxxxxxc (where c is the check-digit)</td>
+                        <td><button id="ISBNButton" , onclick="">Process</button></td>
+                        <td>
+                            <p id="IsISBN"></p>
+                        </td>
+                    </tr>
+
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
